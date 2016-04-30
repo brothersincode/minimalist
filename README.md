@@ -13,8 +13,10 @@
 	<a href="https://github.com/brothersincode/minimalist" title="روی گیت‌هاب">نسخه فارسی</a>
 </p>
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/brothersincode/minimalist/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/brothersincode/minimalist.svg?style=flat-square)](https://github.com/brothersincode/minimalist/issues)
+[![Brothers in Code](http://img.shields.io/badge/Brothers-in_Code-lightgrey.svg?style=flat-square)](http://brothersincode.ir/)
 [![it's a geminorum project](http://img.shields.io/badge/it's_a-geminorum_project-lightgrey.svg?style=flat-square)](http://geminorum.ir/)
-[![Brothers in Code](http://img.shields.io/badge/Brothers-in_Code-lightgrey.svg?style=flat-square)](https://github.com/brothersincode/)
 [![Analytics](https://ga-beacon.appspot.com/UA-865830-4/minimalist/readme?pixel)](https://github.com/brothersincode/minimalist)
 
 ---
