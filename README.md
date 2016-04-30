@@ -1,3 +1,23 @@
+# Minimalist
+
+<p lang="fa" dir="rtl" align="right">شاخه شده از <a href="http://markdown.pioul.fr/" title="Minimalist Online Markdown Editor">ویرایشگر آنلاین مارک‌داون مینیمالیست</a>
+	نوشته <a href="http://pioul.fr/a-propos/" title="Philippe Masset">فیلیپ ماسه</a></p>
+<p lang="fa" dir="rtl" align="right">با الهام از <a href="https://github.com/dariubs/rtlmd" title="RTL Markdown Editor">ویرایشگر راست‌به‌چپ مارک‌داون</a>
+	کاری از <a href="http://dariubs.github.io/" title="Dariush Abbasi">داریوش عباسی</a></p>
+
+<p lang="fa" dir="rtl" align="right">و استفاده از <a href="http://rastikerdar.github.io/compare-fonts/" title="مقایسه قلم‌های فارسی">قلم‌های آزاد</a> فارسی به طراحی <a href="http://rastikerdar.blog.ir/" title="Saber Rasti Kerdar">صابر راستی کردار</a></p>
+
+<p lang="fa" dir="rtl" align="right">به فارسی <a href="http://fa.geminorum.ir/" title="Nasser Rafie">ناصر رفیع</a> /
+	<a href="https://github.com/pioul/Minimalist-Online-Markdown-Editor" title="روی گیت‌هاب">متن اصلی</a> /
+	<a href="https://chrome.google.com/webstore/detail/minimalist-markdown-edito/pghodfjepegmciihfhdipmimghiakcjf" title="Chrome app">اپ کروم</a> /
+	<a href="https://github.com/brothersincode/minimalist" title="روی گیت‌هاب">نسخه فارسی</a>
+</p>
+
+[![it's a geminorum project](http://img.shields.io/badge/it's_a-geminorum_project-lightgrey.svg?style=flat-square)](http://geminorum.ir/)
+[![Brothers in Code](http://img.shields.io/badge/Brothers-in_Code-lightgrey.svg?style=flat-square)](https://github.com/brothersincode/)
+[![Analytics](https://ga-beacon.appspot.com/UA-865830-4/minimalist/readme?pixel)](https://github.com/brothersincode/minimalist)
+
+---
 # Minimalist Online Markdown Editor
 
 This is the source for the **simplest** and **slickest** online Markdown editor, available online here: <http://markdown.pioul.fr>  

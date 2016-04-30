@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>
-		<title>Minimalist Online Markdown Editor</title>
+		<title>مینیمالیست</title>
 		<meta name="description" content="This is the simplest and slickest online Markdown editor. Just write Markdown and see what it looks like as you type. And convert it to HTML in one click."/>
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<meta property="og:image" content="http://markdown.pioul.fr/images/markdown.png"/>
@@ -31,151 +31,171 @@
 				<div class="top_panel" id="quick-reference">
 					<div class="close">×</div>
 
-					<h2>Quick Reference</h2>
+					<h2>راهنمای سریع</h2>
 
 					<table>
 						<tr>
 							<td>
-								<pre><code><span class="highlight">*</span>This is italicized<span class="highlight">*</span>, <wbr/>and <span class="highlight">**</span>this is bold<span class="highlight">**</span>.</code></pre>
+								<pre><code><span class="highlight">*</span>این ایتالیک است<span class="highlight">*</span>، <wbr/>و <span class="highlight">**</span>این درشت است<span class="highlight">**</span>.</code></pre>
 							</td>
-							<td><p>Use <code>*</code> or <code>_</code> for emphasis.</p></td>
+							<td><p>برای تأکید از <code>*</code> یا <code>_</code> استفاده کنید.</p></td>
 						</tr>
 						<tr>
 							<td>
-								<pre><code><span class="highlight">#</span> This is a first level header</code></pre>
+								<pre><code><span class="highlight">#</span> این یک عنوان سطح اول است</code></pre>
 							</td>
-							<td><p>Use one or more hash marks for headers: <code>#&nbsp;H1</code>, <code>##&nbsp;H2</code>, <code>###&nbsp;H3</code>…</p></td>
+							<td><p>استفاده از یک نشانگر هش یا بیشتر برای عنوان: <code dir="ltr">H3&nbsp;###</code>, <code dir="ltr">H2&nbsp;##</code>, <code dir="ltr">H1&nbsp;#</code> …</p></td>
 						</tr>
 						<tr>
 							<td>
-								<pre><code>This is a link to <wbr/><span class="highlight">[Google](http://www.google.com)</span></code></pre>
+								<pre><code>این یک پیوند به <wbr/><span class="highlight">[گوگل](http://www.google.com)</span> است.</code></pre>
 							</td>
 							<td><p></p></td>
 						</tr>
 						<tr>
 							<td>
-								<pre><code>First line.<span class="highlight">  </span>
-Second line.</code></pre>
+								<pre><code>خط اول.<span class="highlight">  </span>
+خط دوم.</code></pre>
 							</td>
-							<td><p>End a line with two spaces for a linebreak.</p></td>
+							<td><p>پایان هر خط با استفاده از دو نویسه فاصله</p></td>
 						</tr>
 						<tr>
 							<td>
-								<pre><code><span class="highlight">- </span>Unordered list item
-<span class="highlight">- </span>Unordered list item</code></pre>
+								<pre><code><span class="highlight">- </span>قلم از فهرست نامرتب
+<span class="highlight">- </span>قلم از فهرست نامرتب</code></pre>
 							</td>
-							<td><p>Unordered (bulleted) lists use asterisks, pluses, or hyphens (<code>*</code>, <code>+</code>, or <code>-</code>) as list markers.</p></td>
+							<td><p>برای فهرست نامرتب(بولت) از نشانگر ستاره، اضافه و یا خط (<code>*</code>, <code>+</code>, or <code>-</code>) استفاده کنید.</p></td>
 						</tr>
 						<tr>
 							<td>
-								<pre><code><span class="highlight">1. </span>Ordered list item
-<span class="highlight">2. </span>Ordered list item</code></pre>
+								<pre><code><span class="highlight">1. </span>قلم از فهرست مرتب
+<span class="highlight">2. </span>قلم از فهرست مرتب</code></pre>
 							</td>
-							<td><p>Ordered (numbered) lists use regular numbers, followed by periods, as list markers.</p></td>
+							<td><p>برای فهرست مرتب از اعداد به عنوان نشانگر استفاده کنید.</p></td>
 						</tr>
 						<tr>
 							<td><pre><code><span class="highlight">    </span>/* This is a code block */</code></pre></td>
-							<td><p>Indent four spaces for a preformatted block.</p></td>
+							<td><p>برای قطعات از پیش تنظیم شده از تورفتگی با چهار فاصله استفاده کنید.</p></td>
 						</tr>
 						<tr>
-							<td><pre><code>Let's talk about <span class="highlight">`</span>&lt;html&gt;<span class="highlight">`</span>!</code></pre></td>
-							<td><p>Use backticks for inline code.</p></td>
+							<td><pre><code>بیایید درباره <span class="highlight">`</span>&lt;html&gt;<span class="highlight">`</span> صحبت کنیم!</code></pre></td>
+							<td><p>برای کدهای درون خطی از نشانگر نقل‌قول وارونه استفاده کنید.</p></td>
 						</tr>
 						<tr>
 							<td>
 								<pre><code><span class="highlight">![](http://w3.org/Icons/valid-xhtml10)</span></code></pre>
 							</td>
-							<td><p>Images are exactly like links, with an exclamation mark in front of them.</p></td>
+							<td><p>تصویرها همانند پیوندها هستند، همراه با یک علامت تعجب در مقابل آنها.</p></td>
 						</tr>
 					</table>
 
-					<p><a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">Full Markdown documentation</a></p>
+					<p><a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">مستندات بیشتر برای ساختار مارک‌داون</a></p>
 				</div>
 
 				<div class="top_panel" id="about">
 					<div class="close">×</div>
 
-					<h2>About MME</h2>
+					<h2>مینیمالیست</h2>
 
-					<p>Hi, I'm <a href="http://pioul.fr/a-propos/" target="_blank">Philippe Masset</a>.</p>
-					<p>I made the Minimalist Online Markdown Editor because I love Markdown and simple things.<br/>
-						The whole source code is on <a href="https://github.com/pioul/Minimalist-Online-Markdown-Editor" target="_blank">GitHub</a>, and this editor is also available offline and with file support as a <a href="https://chrome.google.com/webstore/detail/minimalist-markdown-edito/pghodfjepegmciihfhdipmimghiakcjf" target="_blank">Chrome app</a>.</p>
-					<p>If you have any suggestions or remarks whatsoever, just click on my name above and you'll have plenty of ways of contacting me.</p>
+					<p>شاخه شده از <a href="http://markdown.pioul.fr/" title="Minimalist Online Markdown Editor">ویرایشگر آنلاین مارک‌داون مینیمالیست</a>
+						نوشته <a target="_blank" href="http://pioul.fr/a-propos/" title="Philippe Masset">فیلیپ ماسه</a></p>
+					<p>با الهام از <a target="_blank" href="https://github.com/dariubs/rtlmd" title="RTL Markdown Editor">ویرایشگر راست‌به‌چپ مارک‌داون</a>
+						کاری از <a target="_blank" href="http://dariubs.github.io/" title="Dariush Abbasi">داریوش عباسی</a></p>
 
-					<h3>Privacy</h3>
+					<p>و استفاده از <a target="_blank" href="http://rastikerdar.github.io/compare-fonts/" title="مقایسه قلم‌های فارسی">قلم‌های آزاد</a> فارسی به طراحی <a target="_blank" href="http://rastikerdar.blog.ir/" title="Saber Rasti Kerdar">صابر راستی کردار</a></p>
+
+					<p>به فارسی <a target="_blank" href="http://fa.geminorum.ir/" title="Nasser Rafie">ناصر رفیع</a> /
+						<a target="_blank" href="https://github.com/pioul/Minimalist-Online-Markdown-Editor" title="روی گیت‌هاب">متن اصلی</a> /
+						<a href="https://chrome.google.com/webstore/detail/minimalist-markdown-edito/pghodfjepegmciihfhdipmimghiakcjf" target="_blank" title="Chrome app">اپ کروم</a> /
+						<a target="_blank" href="https://github.com/brothersincode/minimalist" title="روی گیت‌هاب">نسخه فارسی</a>
+					</p>
+
+					<h3>حریم خصوصی</h3>
 
 					<ul>
-						<li>No data is sent to any server – everything you type stays inside your browser</li>
-						<li>The editor automatically saves what you write locally for future use.<br/>
-							If using a public computer, either empty the left panel before leaving the editor or use your browser's privacy mode</li>
+						<li>هیچ نوشته‌ای به هیچ سروری ارسال نخواهد شد. هر چیزی که وارد می‌کنید، فقط روی مرورگر شما ذخیره می‌شود.</li>
+						<li>به طور خودکار، متن وارد شده برای استفاده در آینده، روی مرورگر شما نگه‌داری خواهد شد.<br/>
+						اگر از رایانه مشترکت با دیگران استفاده می‌کنید، در پایان کار صفحه را خالی کنید. یا قبل از شروع از حالت ناشناس مرورگر استفاده کنید.</li>
 					</ul>
+
+					<p dir="ltr">
+						<a href="http://geminorum.ir/"><img src="http://img.shields.io/badge/it's_a-geminorum_project-lightgrey.svg?style=flat-square" alt="it's a geminorum project" style="max-width:100%;"></a>
+						<a href="https://github.com/brothersincode/"><img src="http://img.shields.io/badge/Brothers-in_Code-lightgrey.svg?style=flat-square" alt="Brothers in Code" style="max-width:100%;"></a>
+						<a href="https://github.com/brothersincode/persian-sub"><img alt="Analytics" src="https://ga-beacon.appspot.com/UA-865830-4/minimalist/readme?pixel" style="max-width:0;"></a>
+					</p>
+					
 				</div>
 
 				<div class="top_panel" id="settings">
 					<div class="close">×</div>
 
-					<h2>Settings</h2>
+					<h2>تنظیمات</h2>
 
 					<p>
-						<label>Text size</label>
-						<a href="#" class="button" id="decrease-font-size"></a>
+						<label>اندازه متن</label>
 						<a href="#" class="button" id="increase-font-size"></a>
+						<a href="#" class="button" id="decrease-font-size"></a>
 					</p>
 
 					<p>
-						<label>Theme</label>
+						<label>رنگ‌بندی</label>
 						<span class="theme-control theme-control-dark">
-							Light
-							<a href="#" class="button" id="use-dark-theme">Change to Dark Theme</a>
+							روشن
+							<a href="#" class="button" id="use-dark-theme">تغییر به رنگ‌بندی تیره</a>
 						</span>
 						<span class="theme-control theme-control-light">
-							Dark
-							<a href="#" class="button" id="use-light-theme">Change to Light Theme</a>
+							تیره
+							<a href="#" class="button" id="use-light-theme">تغییر به رنگ‌بندی روشن</a>
 						</span>
 					</p>
 
-					<h2>Shortcuts</h2>
+					<h2>کلید‌های میان‌بر</h2>
 
 					<ul>
-						<li><kbd>Ctrl</kbd> + <kbd>+</kbd> to increase the text size</li>
-						<li><kbd>Ctrl</kbd> + <kbd>-</kbd> to decrease the text size</li>
+						<li><kbd>Ctrl</kbd> + <kbd>+</kbd> برای افزایش اندازه متن</li>
+						<li><kbd>Ctrl</kbd> + <kbd>-</kbd> برای کاهش اندازه متن</li>
 					</ul>
-
-					<h3>Shortcuts on Mac</h3>
-
-					<p>On Mac, replace <kbd>Ctrl</kbd> with <kbd>&#8984;</kbd> (the command key) in the shortcuts above.</p>
 				</div>
 			</div>
 			<div class="wrapper">
 				<div class="topbar hidden-when-fullscreen">
 					<div class="buttons-container clearfix">
-						<a href="#" class="button toppanel" data-toppanel="quick-reference">Quick Reference</a>
-						<a href="#" class="button toppanel" data-toppanel="about">About</a>
+						<a href="#" class="button toppanel" data-toppanel="quick-reference">راهنمای سریع</a>
+						<a href="#" class="button toppanel" data-toppanel="about">درباره</a>
 						<a href="#" class="button icon-settings toppanel" data-toppanel="settings"></a>
-						<a href="#" class="button icon-fullscreen feature" data-feature="fullscreen" data-tofocus="markdown" title="Go fullscreen"></a>
+						<a href="#" class="button icon-fullscreen feature" data-feature="fullscreen" data-tofocus="markdown" title="برو به تمام صفحه"></a>
 					</div>
 				</div>
-				<textarea id="markdown" class="full-height" placeholder="Write Markdown"># Minimalist Online Markdown Editor
+				<textarea id="markdown" class="full-height" placeholder="مارک‌داون بنویسید">سلام دنیا
+===
 
-This is the **simplest** and **slickest** online Markdown editor.  
-Just write Markdown and see what it looks like as you type. And convert it to HTML in one click.
+این یک نوشتار آزمایشی برای نمایش قابلیتهای [مارک داون](http://daringfireball.net/projects/markdown/) است.
 
-## Getting started
+یک لیست
+---
 
-### How?
+ویژگی های نرم افزار آزاد
 
-Just start typing in the left panel.
+* آزادی اجرای برنامه برای هر کاری (آزادی صفرم)
+* *آزادی مطالعه چگونگی کار برنامه و تغییر آن (پیش نیاز: متن برنامه) (آزادی یکم)*
+* **آزادی تکثیر و کپی برنامه (آزادی دوم)**
+* ***آزادی تقویت و بهتر کردن برنامه و توزیع آن برای همگان (پیش نیاز: متن برنامه) (آزادی سوم)***
 
-### Buttons you might want to use
 
-- **Quick Reference**: that's a reminder of the most basic rules of Markdown
-- **HTML | Preview**: *HTML* to see the markup generated from your Markdown text, *Preview* to see how it looks like
+قابلیت افزودن تکه کدها
+---
+```javascript
+alert("Hello World")
+```
 
-### Privacy
+و نوشته های تورفته
+---
+>آزادی نرم‌افزارهای آزاد تا جایی هست که حتی می‌توان بدون پرداخت هزینه‌ای برای مجوز، کپی‌هایی از یک نرم‌افزار آزاد را، یا بدون تغییرات، رایگان یا در ازای دریافت وجه، برای هرکس و هرجایی آن را توزیع کرد.
 
-- No data is sent to any server – everything you type stays inside your browser
-- The editor automatically saves what you write locally for future use.  
-  If using a public computer, either empty the left panel before leaving the editor or use your browser's privacy mode</textarea>
+و اضافه کردن لینک ها
+---
+- [بنیاد نرم افزار آزاد](http://www.fsf.org/)
+- [بنیاد گنو](https://www.gnu.org)</textarea>
 			</div>
 		</div>
 		<div id="right-column">
@@ -183,11 +203,11 @@ Just start typing in the left panel.
 				<div class="topbar hidden-when-fullscreen">
 					<div class="buttons-container clearfix">
 						<div class="button-group">
-							<a href="#" class="button switch" data-switchto="html">HTML</a>
-							<a href="#" class="button switch" data-switchto="preview">Preview</a>
+							<a href="#" class="button switch" data-switchto="html">اچ‌تی‌ام‌ال</a>
+							<a href="#" class="button switch" data-switchto="preview">پیش نمایش</a>
 						</div>
-						<a href="#" class="button icon-sync-scroll feature" data-feature="sync-scroll" title="Toggle sync-scrolling (when enabled, the preview panel will automatically scroll with the left panel)"></a>
-						<a href="#" class="button icon-fullscreen feature" data-feature="fullscreen" data-tofocus="" title="Go fullscreen"></a><!-- data-tofocus is set dynamically by the HTML/preview switch -->
+						<a href="#" class="button icon-sync-scroll feature" data-feature="sync-scroll" title="همگام‌سازی اسکرول (اگر فعال باشد، پیش‌نمایش همراه با پنل سمت راست حرکت خواهد کرد.)"></a>
+						<a href="#" class="button icon-fullscreen feature" data-feature="fullscreen" data-tofocus="" title="برو به تمام صفحه"></a><!-- data-tofocus is set dynamically by the HTML/preview switch -->
 					</div>
 				</div>
 				<div class="bottom-bar hidden-when-fullscreen clearfix">
@@ -200,25 +220,15 @@ Just start typing in the left panel.
 		<div class="topbar visible-when-fullscreen">
 			<div class="buttons-container clearfix">
 				<div class="button-group">
-					<a href="#" class="button switch" data-switchto="markdown">Markdown</a>
-					<a href="#" class="button switch" data-switchto="html">HTML</a>
-					<a href="#" class="button switch" data-switchto="preview">Preview</a>
+					<a href="#" class="button switch" data-switchto="markdown">مارک‌داون</a>
+					<a href="#" class="button switch" data-switchto="html">اچ‌تی‌ام‌ال</a>
+					<a href="#" class="button switch" data-switchto="preview">پیش‌نمایش</a>
 				</div>
-				<a href="#" class="button icon-fullscreen feature" data-feature="fullscreen" title="Exit fullscreen"></a>
+				<a href="#" class="button icon-fullscreen feature" data-feature="fullscreen" title="خروج از تمام صفحه"></a>
 			</div>
 		</div>
 		<div class="bottom-bar visible-when-fullscreen clearfix">
 			<div class="word-count"></div>
 		</div>
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-8885785-17']);
-		  _gaq.push(['_trackPageview']);
-		  (function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		</script>
 	</body>
 </html>

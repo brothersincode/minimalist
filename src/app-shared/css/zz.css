@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Samim';
+    src: url('https://cdn.rawgit.com/rastikerdar/samim-font/master/dist/Samim.eot');
+    src: url('https://cdn.rawgit.com/rastikerdar/samim-font/master/dist/Samim.eot?#iefix') format('embedded-opentype'),
+		 url('https://cdn.rawgit.com/rastikerdar/samim-font/master/dist/Samim.woff') format('woff'),
+		 url('https://cdn.rawgit.com/rastikerdar/samim-font/master/dist/Samim.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Samim';
+    src: url('https://cdn.rawgit.com/rastikerdar/samim-font/master/dist/Samim-Bold.eot');
+    src: url('https://cdn.rawgit.com/rastikerdar/samim-font/master/dist/Samim-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('https://cdn.rawgit.com/rastikerdar/samim-font/master/dist/Samim-Bold.woff') format('woff'),
+		 url('https://cdn.rawgit.com/rastikerdar/samim-font/master/dist/Samim-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+body {
+  font-family: 'Samim', sans-serif;
+  direction: rtl;
+}
+
+#left-column,
+#right-column {
+  float: right;
+}
+
+#preview code {
+  display: inline-block;
+  direction: ltr !important;
+  margin-left: 5px;
+}
+
+#preview pre {
+  display: block;
+  direction: ltr !important;
+  margin-left: 5px;
+}
+
+blockquote {
+  border-left: none;
+  border-right: 5px solid var(--quote-border-color);
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.wrapper {
+  padding: 22px 10px 20px 0px !important;
+}
+
+#right-column .wrapper {
+  padding-left: 10px;
+  padding-right: 9px;
+  border-left: none;
+  border-right: 1px solid var(--column-border-color);
+}
+
+#quick-reference table td:last-child {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.topbar .buttons-container {
+  float: left;
+}
+
+.bottom-bar {
+  padding-right: 0px;
+  padding-left: 5px;
+}
+
+.bottom-bar .word-count {
+  float: left;
+}
+
+.topbar .buttons-container .button,
+.topbar .buttons-container .button-group {
+  float: right;
+}
+
+.topbar .buttons-container .button-group .button.switch:after {
+  display: none;
+}
+
+.topbar .buttons-container .button-group .button.switch:before {
+  right: auto;
+  left: -4px;
+}
+
+.topbar .buttons-container .button-group .button.switch:first-child {
+    padding-left: 3px;
+    padding-right: 6px;
+}
+
+#top_panels_container .top_panel .close {
+  right: auto;
+  left: 15px;
+}
+
+#settings label {
+    padding-right:0;
+    padding-left: 20px;
+}
+
+#settings #decrease-font-size:after { content: "\0627\0644\0641"; }
+#settings #increase-font-size:after { content: "\0627\0644\0641"; }
+#settings #decrease-font-size:before { content: "-"; }
+#settings #increase-font-size:before { content: "+"; }
+
+#settings .theme-control .button {
+    margin-left: 0;
+    margin-right: 10px;
+}
