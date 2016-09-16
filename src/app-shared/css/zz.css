@@ -16,15 +16,6 @@
     font-weight: bold;
 }
 
-/*@font-face {
-    font-family: Vazir;
-    src: url('https://cdn.rawgit.com/rastikerdar/vazir-font/v4.1.1/dist/Vazir-Light.eot');
-    src: url('https://cdn.rawgit.com/rastikerdar/vazir-font/v4.1.1/dist/Vazir-Light.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.rawgit.com/rastikerdar/vazir-font/v4.1.1/dist/Vazir-Light.woff') format('woff'),
-         url('https://cdn.rawgit.com/rastikerdar/vazir-font/v4.1.1/dist/Vazir-Light.ttf') format('truetype');
-    font-weight: 300;
-}*/
-
 @font-face {
   font-family: Vazir Code;
   src: url('https://cdn.rawgit.com/rastikerdar/vazir-code-font/v1.0.2/dist/Vazir-Code.eot');
@@ -39,14 +30,22 @@ body {
     direction: rtl;
 }
 
+pre code, #html, #markdown {
+    font-family: 'Vazir Code', monospaced;
+}
+
 #left-column, #right-column {
     float: right;
 }
 
 #html, #markdown {
-    font-family: 'Vazir Code', monospaced;
-    line-height: inherit;
+    line-height: 1.4;
     padding: 5px 5px 0;
+}
+
+#preview ol {
+    list-style-type: -moz-persian;
+    list-style-type: persian;
 }
 
 #preview code {
@@ -77,6 +76,15 @@ blockquote {
     padding-right: 9px;
     border-left: none;
     border-right: 1px solid var(--column-border-color);
+}
+
+#quick-reference table td {
+    width: 50%;
+}
+
+#quick-reference table td pre {
+    font-size: 1.2em;
+    line-height: 1.2;
 }
 
 #quick-reference table td:last-child {
