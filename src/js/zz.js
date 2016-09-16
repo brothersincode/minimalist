@@ -22,10 +22,10 @@ $(document).ready(function() {
         }
 
         // https://github.com/IranOpenFontGroup/Discussions/issues/5
-		str = str.replace(new RegExp(",", 'g'), '\u066c');
+        str = str.replace(new RegExp(",", 'g'), '\u066c');
 
         return str;
     };
 
-	editor.updateWordCount(editor.markdownPreview.text());
+    editor.updateWordCount(editor.markdownPreview.text());
 });
