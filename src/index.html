@@ -15,6 +15,7 @@
 		<!-- build:cssDarkThemeRef --><!-- endbuild -->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://cdn.rawgit.com/juvee/virastar/0.7.1/lib/virastar.js"></script>
 
 		<!-- build:js -->
 		<script src="app-shared/js/libs/markdown-it.min.js"></script>
@@ -112,6 +113,10 @@
 
 					<p>و استفاده از <a target="_blank" href="http://rastikerdar.github.io/compare-fonts/" title="مقایسه قلم‌های فارسی">قلم‌های آزاد</a> فارسی به طراحی <a target="_blank" href="http://rastikerdar.blog.ir/" title="Saber Rasti Kerdar">صابر راستی کردار</a></p>
 
+					<p>و همچنین کتابخانه <a target="_blank" href="http://juvee.github.io/virastar/" title="Virastar is a Persian text cleaner">ویراستار</a>
+						کاری از <a target="_blank" href="https://github.com/aziz/virastar" title="Allen Bargi">آلن برگی</a>
+						و <a target="_blank" href="https://github.com/juvee/virastar" title="juvee">جووی</a></p>
+
 					<p>به فارسی <a target="_blank" href="http://fa.geminorum.ir/" title="Nasser Rafie">ناصر رفیع</a> /
 						<a href="https://github.com/pioul/Minimalist-Online-Markdown-Editor" title="روی گیت‌هاب" target="_blank">سورس اصلی</a> /
 						<a href="https://chrome.google.com/webstore/detail/pghodfjepegmciihfhdipmimghiakcjf" target="_blank" title="Chrome app">اپ کروم</a> /
@@ -164,13 +169,34 @@
 						<li><kbd>Ctrl</kbd> + <kbd>-</kbd> برای کاهش اندازه متن</li>
 					</ul>
 				</div>
+				<div class="top_panel" id="virastar">
+					<div class="close">×</div>
+
+					<h2><a href="https://github.com/juvee/virastar/" target="_blank">ویراستار</a></h2>
+					<pre><code>ويراستار به شما كمك مي كند تا متون فارسي زيبا تر و درست تري بنويسيد .
+
+ويراستار به طور پيش فرض اين کار ها را انجام می دهد :
+1. نویسه های عربي را به فارسی تبديل مي کند.  مثلا كاف و ياي عربي .
+2. نویسه های انگليسي رايج در تايپ فارسي را به معادل صحيح فارسي آن تبدیل می کند, مثلا تبدیل کامای انگلیسی به ویرگول (,), يا نقطه ویرگول به جای semicolon (;) و یا استفاده از "گيومه های فارسي"
+3. اعداد عربي و انگليسي و علائم رياضی را به معادل فارسی آن ها تبديل مي کند.    مثلا  :  12%  456
+4. سه نقطه را به نويسه صحيح آن که تنها يك نويسه است تبديل کرده و فاصله گذاري آن را اصلاح مي کند ...
+5. در ترکيباتي مانند ''خانه ي پدری'' که  با "ه" تمام می‌شوند نشانه "ی" كسره ی اضافه را به "هٔ" تبديل می كند.
+6. دو علامت منهاي پي در پي را به خط کشيده کوتاه (--) و سه علامت منهاي پي در پي را به خط کشیده بلند (---) تبديل مي كند .
+7. فاصله گذاری را تصحيح مي کند . بين هر کلمه تنها یک فاصله و بین پیشوندها و پسوندهاي مانند "مي","تر"و"ترین"  يک نيم فاصله قرار مي دهد.  بین ویرگول یا نقطه و کلمه قبل آن فاصله را حذف می کند.
+8. فاصله گذاری را برای متون بین "  گیومه  " , {    آکولاد   }  , [   کروشه  ]  و ( پرانتز    ) تنظيم مي کند .
+9. علامت تعحب و سوال اضافی را حذف مي کند؟؟؟!!!!!!!</code></pre>
+
+					<p><a href="https://github.com/juvee/virastar/" target="_blank">مستندات بیشتر برای ویراستار</a> / <a href="#" class="virastar" data-virastar="markdown">ویراستاری متن فعلی</a></p>
+				</div>
 			</div>
 			<div class="wrapper">
 				<div class="topbar hidden-when-fullscreen">
 					<div class="buttons-container clearfix">
-						<a href="#" class="button toppanel" data-toppanel="quick-reference">راهنمای سریع</a>
 						<a href="#" class="button toppanel" data-toppanel="about">درباره</a>
+						<a href="#" class="button toppanel" data-toppanel="quick-reference">راهنمای سریع</a>
+						<a href="#" class="button toppanel" data-toppanel="virastar">ویراستار</a>
 						<a href="#" class="button icon-settings toppanel" data-toppanel="settings"></a>
+						<a href="#" class="button icon-virastar virastar" data-virastar="markdown" title="ویراستاری کن"><svg><use xlink:href="#icon-pen"></use></svg></a>
 						<a href="#" class="button icon-fullscreen feature" data-feature="fullscreen" data-tofocus="markdown" title="برو به تمام صفحه"></a>
 					</div>
 				</div>
@@ -213,6 +239,7 @@ alert("Hello World")
 							<a href="#" class="button switch" data-switchto="html">اچ‌تی‌ام‌ال</a>
 							<a href="#" class="button switch" data-switchto="preview">پیش نمایش</a>
 						</div>
+						<a href="#" class="button icon-virastar virastar" data-virastar="html" title="ویراستاری کن"><svg><use xlink:href="#icon-pen"></use></svg></a>
 						<a href="#" class="button icon-sync-scroll feature" data-feature="sync-scroll" title="همگام‌سازی اسکرول (اگر فعال باشد، پیش‌نمایش همراه با پنل سمت راست حرکت خواهد کرد.)"></a>
 						<a href="#" class="button icon-fullscreen feature" data-feature="fullscreen" data-tofocus="" title="برو به تمام صفحه"></a><!-- data-tofocus is set dynamically by the HTML/preview switch -->
 					</div>
@@ -231,6 +258,7 @@ alert("Hello World")
 					<a href="#" class="button switch" data-switchto="html">اچ‌تی‌ام‌ال</a>
 					<a href="#" class="button switch" data-switchto="preview">پیش‌نمایش</a>
 				</div>
+				<a href="#" class="button icon-virastar virastar" data-virastar="html" title="ویراستاری کن"><svg><use xlink:href="#icon-pen"></use></svg></a>
 				<a href="#" class="button icon-fullscreen feature" data-feature="fullscreen" title="خروج از تمام صفحه"></a>
 			</div>
 		</div>
@@ -246,5 +274,14 @@ alert("Hello World")
 			ga('create', 'UA-865830-5', 'auto');
 			ga('send', 'pageview');
 		</script>
+		<svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<defs>
+			<symbol id="icon-pen" viewBox="0 0 32 32">
+			<title>pen</title>
+			<path class="path1" d="M31.818 9.122l-8.939-8.939c-0.292-0.292-0.676-0.226-0.855 0.146l-1.199 2.497 8.35 8.35 2.497-1.199c0.372-0.178 0.438-0.563 0.146-0.855z"></path>
+			<path class="path2" d="M19.231 4.231l-8.231 0.686c-0.547 0.068-1.002 0.184-1.159 0.899-0 0.001-0 0.001-0.001 0.002-2.232 10.721-9.84 21.183-9.84 21.183l1.793 1.793 8.5-8.5c-0.187-0.392-0.293-0.83-0.293-1.293 0-1.657 1.343-3 3-3s3 1.343 3 3-1.343 3-3 3c-0.463 0-0.902-0.105-1.293-0.293l-8.5 8.5 1.793 1.793c0 0 10.462-7.608 21.183-9.84 0.001-0 0.001-0 0.002-0.001 0.714-0.157 0.831-0.612 0.898-1.159l0.686-8.231-8.538-8.539z"></path>
+			</symbol>
+		</defs>
+		</svg>
 	</body>
 </html>

@@ -123,6 +123,10 @@ blockquote {
     padding-right: 6px;
 }
 
+#top_panels_container .top_panel h2 a {
+    text-decoration: none;
+}
+
 #top_panels_container .top_panel .close {
     right: auto;
     left: 15px;
@@ -152,4 +156,29 @@ blockquote {
 #settings .theme-control .button {
     margin-left: 0;
     margin-right: 10px;
+}
+
+.icon-virastar {
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    line-height: 18px;
+}
+
+.icon-virastar svg {
+    display: inline-block;
+    width: 14px;
+    height: 18px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
 }

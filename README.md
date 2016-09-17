@@ -7,6 +7,11 @@
 
 <p lang="fa" dir="rtl" align="right">و استفاده از <a href="http://rastikerdar.github.io/compare-fonts/" title="مقایسه قلم‌های فارسی">قلم‌های آزاد</a> فارسی به طراحی <a href="http://rastikerdar.blog.ir/" title="Saber Rasti Kerdar">صابر راستی کردار</a></p>
 
+<p lang="fa" dir="rtl" align="right">و همچنین کتابخانه <a href="http://juvee.github.io/virastar/" title="Virastar is a Persian text cleaner">ویراستار</a>
+	کاری از <a href="https://github.com/aziz/virastar" title="Allen Bargi">آلن برگی</a>
+	و <a href="https://github.com/juvee/virastar" title="juvee">جووی</a></p>
+
+
 <p lang="fa" dir="rtl" align="right">به فارسی <a href="http://fa.geminorum.ir/" title="Nasser Rafie">ناصر رفیع</a> /
 	<a href="https://github.com/pioul/Minimalist-Online-Markdown-Editor" title="روی گیت‌هاب">متن اصلی</a> /
 	<a href="https://chrome.google.com/webstore/detail/minimalist-markdown-edito/pghodfjepegmciihfhdipmimghiakcjf" title="Chrome app">اپ کروم</a> /

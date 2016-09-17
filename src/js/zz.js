@@ -1,3 +1,5 @@
+var virastarApp;
+
 $(document).ready(function() {
     editor.updateWordCount = function(text) {
         var wordCount = "";
@@ -28,4 +30,60 @@ $(document).ready(function() {
     };
 
     editor.updateWordCount(editor.markdownPreview.text());
+
+    virastarApp = {
+
+        virastarMarkdown: new Virastar({
+            cleanup_spacing: false,
+            fix_english_numbers: false,
+        }),
+        virastarHTML: new Virastar({
+            cleanup_spacing: false,
+            preserve_HTML: false,
+            preserve_URIs: false,
+        }),
+
+        virastarTriggers: $(".buttons-container").find(".virastar"),
+        virastarPreText: $("#virastar pre"),
+
+        doVirastar: function(type){
+            var html, isAfterUserInput = true;
+
+            if ( 'markdown' == type ) {
+                editor.markdownSource.val(this.virastarMarkdown.cleanup(editor.markdownSource.val()));
+                editor.onInput(isAfterUserInput);
+
+            } else if ( 'html' == type ) {
+                if (editor.activePanel == "preview") {
+                    html = editor.previewMarkdownConverter.render(editor.markdown);
+                    html = this.virastarHTML.cleanup(html);
+                    app.updateMarkdownPreview(html, isAfterUserInput);
+                    editor.triggerEditorUpdatedEvent(isAfterUserInput);
+                } else if (editor.activePanel == "html") {
+                    html = editor.cleanHtmlMarkdownConverter.render(editor.markdown);
+                    html = this.virastarHTML.cleanup(html);
+                    editor.markdownHtml.value = html;
+                }
+            }
+        },
+
+        init: function() {
+
+            this.virastarTriggers.on("click", function(e) {
+                e.preventDefault();
+                virastarApp.doVirastar($(this).data( "virastar" ));
+            });
+
+            $("#virastar a.virastar").on("click", function(e) {
+                e.preventDefault();
+                virastarApp.doVirastar($(this).data( "virastar" ));
+            });
+
+            this.virastarPreText.on("click", function() {
+                editor.addToMarkdownSource($(this).text());
+            });
+        },
+    };
+
+    virastarApp.init();
 });
