@@ -39,8 +39,6 @@ $(document).ready(function() {
         }),
         virastarHTML: new Virastar({
             cleanup_spacing: false,
-            preserve_HTML: false,
-            preserve_URIs: false,
         }),
 
         virastarTriggers: $(".buttons-container").find(".virastar"),
