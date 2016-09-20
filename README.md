@@ -2,9 +2,9 @@
 
 <p lang="fa" dir="rtl" align="right">شاخه شده از <a href="http://markdown.pioul.fr/" title="Minimalist Online Markdown Editor">ویرایشگر آنلاین مارک‌داون مینیمالیست</a> نوشته <a href="http://pioul.fr/a-propos/" title="Philippe Masset">فیلیپ ماسه</a></p>
 
-<p lang="fa" dir="rtl" align="right">و استفاده از <a href="http://rastikerdar.github.io/compare-fonts/" title="مقایسه قلم‌های فارسی">قلم‌های آزاد</a> فارسی به طراحی <a href="http://rastikerdar.blog.ir/" title="Saber Rasti Kerdar">صابر راستی کردار</a></p>
+<p lang="fa" dir="rtl" align="right">همراه با <a href="http://rastikerdar.github.io/compare-fonts/" title="مقایسه قلم‌های فارسی">قلم‌های آزاد فارسی</a> به طراحی <a href="http://rastikerdar.blog.ir/" title="Saber Rasti Kerdar">صابر راستی کردار</a></p>
 
-<p lang="fa" dir="rtl" align="right">و همچنین کتابخانه <a href="http://juvee.github.io/virastar/" title="Virastar is a Persian text cleaner">ویراستار</a> کاری از <a href="https://github.com/aziz/virastar" title="Allen Bargi">آلن برگی</a> و <a href="https://github.com/juvee/virastar" title="juvee">جووی</a></p>
+<p lang="fa" dir="rtl" align="right">و استفاده از کتابخانه <a href="http://juvee.github.io/virastar/" title="Virastar is a Persian text cleaner">ویراستار</a> کاری از <a href="https://github.com/aziz/virastar" title="Allen Bargi">آلن برگی</a> و <a href="https://github.com/juvee/virastar" title="juvee">جووی</a></p>
 
 <p lang="fa" dir="rtl" align="right">به فارسی <a href="http://fa.geminorum.ir/" title="Nasser Rafie">ناصر رفیع</a> /
 	<a href="https://github.com/pioul/Minimalist-Online-Markdown-Editor" title="روی گیت‌هاب">متن اصلی</a> /
