@@ -33,12 +33,10 @@ $(document).ready(function() {
 
     virastarApp = {
 
+        virastarHTML: new Virastar(),
         virastarMarkdown: new Virastar({
             cleanup_spacing: false,
-            fix_english_numbers: false,
-        }),
-        virastarHTML: new Virastar({
-            cleanup_spacing: false,
+            skip_markdown_ordered_lists_numbers_conversion: false,
         }),
 
         virastarTriggers: $(".buttons-container").find(".virastar"),
