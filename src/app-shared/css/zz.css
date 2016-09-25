@@ -40,7 +40,11 @@ pre code, #html, #markdown {
 
 #html, #markdown {
     line-height: 1.4;
-    padding: 5px 5px 0 0;
+    padding: 5px 5px 0 10px;
+}
+
+#preview {
+    padding: 5px 5px 0 10px;
 }
 
 #preview ol {
