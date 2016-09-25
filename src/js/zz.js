@@ -37,6 +37,7 @@ $(document).ready(function() {
         virastarMarkdown: new Virastar({
             fix_dashes: false,
             cleanup_spacing: false,
+            cleanup_begin_and_end: false,
             skip_markdown_ordered_lists_numbers_conversion: false,
         }),
 
