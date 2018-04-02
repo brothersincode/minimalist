@@ -2,11 +2,11 @@
 
 <p lang="fa" dir="rtl" align="right">شاخه شده از <a href="http://markdown.pioul.fr/" title="Minimalist Online Markdown Editor">ویرایشگر آنلاین مارک‌داون مینیمالیست</a> نوشته <a href="http://pioul.fr/a-propos/" title="Philippe Masset">فیلیپ ماسه</a></p>
 
-<p lang="fa" dir="rtl" align="right">همراه با <a href="http://rastikerdar.github.io/compare-fonts/" title="مقایسه قلم‌های فارسی">قلم‌های آزاد فارسی</a> به طراحی <a href="http://rastikerdar.blog.ir/" title="Saber Rasti Kerdar">صابر راستی کردار</a></p>
+<p lang="fa" dir="rtl" align="right">همراه با <a href="https://rastikerdar.github.io/compare-fonts/" title="مقایسه قلم‌های فارسی">قلم‌های آزاد فارسی</a> به طراحی <a href="http://rastikerdar.blog.ir/" title="Saber Rasti Kerdar">صابر راستی کردار</a></p>
 
-<p lang="fa" dir="rtl" align="right">و استفاده از کتابخانه <a href="http://juvee.github.io/virastar/" title="Virastar is a Persian text cleaner">ویراستار</a> کاری از <a href="https://github.com/aziz/virastar" title="Allen Bargi">آلن برگی</a> و <a href="https://github.com/juvee/virastar" title="juvee">جووی</a></p>
+<p lang="fa" dir="rtl" align="right">و استفاده از کتابخانه <a href="https://juvee.github.io/virastar/" title="Virastar is a Persian text cleaner">ویراستار</a> کاری از <a href="https://github.com/aziz/virastar" title="Allen Bargi">آلن برگی</a> و <a href="https://github.com/juvee/virastar" title="juvee">جووی</a></p>
 
-<p lang="fa" dir="rtl" align="right">به فارسی <a href="http://fa.geminorum.ir/" title="Nasser Rafie">ناصر رفیع</a> /
+<p lang="fa" dir="rtl" align="right">به فارسی <a href="https://fa.geminorum.ir/" title="Nasser Rafie">ناصر رفیع</a> /
 	<a href="https://github.com/pioul/Minimalist-Online-Markdown-Editor" title="روی گیت‌هاب">متن اصلی</a> /
 	<a href="https://chrome.google.com/webstore/detail/minimalist-markdown-edito/pghodfjepegmciihfhdipmimghiakcjf" title="Chrome app">اپ کروم</a> /
 	<a href="https://github.com/brothersincode/minimalist" title="روی گیت‌هاب">نسخه فارسی</a>
@@ -14,8 +14,8 @@
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/brothersincode/minimalist/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/brothersincode/minimalist.svg?style=flat-square)](https://github.com/brothersincode/minimalist/issues)
-[![Brothers in Code](http://img.shields.io/badge/Brothers-in_Code-lightgrey.svg?style=flat-square)](http://brothersincode.ir/)
-[![it's a geminorum project](http://img.shields.io/badge/it's_a-geminorum_project-lightgrey.svg?style=flat-square)](http://geminorum.ir/)
+[![Brothers in Code](https://img.shields.io/badge/Brothers-in_Code-lightgrey.svg?style=flat-square)](https://brothersincode.ir/)
+[![it's a geminorum project](https://img.shields.io/badge/it's_a-geminorum_project-lightgrey.svg?style=flat-square)](https://geminorum.ir/)
 [![Analytics](https://ga-beacon.appspot.com/UA-865830-4/minimalist/readme?pixel)](https://github.com/brothersincode/minimalist)
 
 ---
@@ -35,7 +35,7 @@ The Minimalist Markdown Editor project is available both online as a web app, an
 
 ### Building
 
-1. Ensure that [Node.js](http://nodejs.org/) is installed, and open a terminal in the project's root directory.
+1. Ensure that [Node.js](https://nodejs.org/) is installed, and open a terminal in the project's root directory.
 2. Run `npm install` to install the project's developement dependencies.
 3. Run `npm run build` to build the web app. The builds will be placed in the `dist/` directory.
 
