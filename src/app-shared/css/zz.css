@@ -18,10 +18,10 @@
 
 @font-face {
   font-family: "Vazir Code";
-  src: url('https://rawcdn.githack.com/rastikerdar/vazir-code-font/v1.0.3/dist/Vazir-Code.eot');
-  src: url('https://rawcdn.githack.com/rastikerdar/vazir-code-font/v1.0.3/dist/Vazir-Code.eot?#iefix') format('embedded-opentype'),
-       url('https://rawcdn.githack.com/rastikerdar/vazir-code-font/v1.0.3/dist/Vazir-Code.woff') format('woff'),
-       url('https://rawcdn.githack.com/rastikerdar/vazir-code-font/v1.0.3/dist/Vazir-Code.ttf') format('truetype');
+  src: url('https://rawcdn.githack.com/rastikerdar/vazir-code-font/v1.1.1/dist/Vazir-Code.eot');
+  src: url('https://rawcdn.githack.com/rastikerdar/vazir-code-font/v1.1.1/dist/Vazir-Code.eot?#iefix') format('embedded-opentype'),
+       url('https://rawcdn.githack.com/rastikerdar/vazir-code-font/v1.1.1/dist/Vazir-Code.woff') format('woff'),
+       url('https://rawcdn.githack.com/rastikerdar/vazir-code-font/v1.1.1/dist/Vazir-Code.ttf') format('truetype');
   font-weight: normal;
 }
 
