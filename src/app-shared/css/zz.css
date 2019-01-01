@@ -5,6 +5,7 @@
          url('https://rawcdn.githack.com/rastikerdar/vazir-font/v19.0.0/dist/Vazir.woff') format('woff'),
          url('https://rawcdn.githack.com/rastikerdar/vazir-font/v19.0.0/dist/Vazir.ttf') format('truetype');
     font-weight: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
          url('https://rawcdn.githack.com/rastikerdar/vazir-font/v19.0.0/dist/Vazir-Bold.woff') format('woff'),
          url('https://rawcdn.githack.com/rastikerdar/vazir-font/v19.0.0/dist/Vazir-Bold.ttf') format('truetype');
     font-weight: bold;
+    font-display: swap;
 }
 
 @font-face {
@@ -23,6 +25,7 @@
        url('https://rawcdn.githack.com/rastikerdar/vazir-code-font/v1.1.1/dist/Vazir-Code.woff') format('woff'),
        url('https://rawcdn.githack.com/rastikerdar/vazir-code-font/v1.1.1/dist/Vazir-Code.ttf') format('truetype');
   font-weight: normal;
+  font-display: swap;
 }
 
 body {
