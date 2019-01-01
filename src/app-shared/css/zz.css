@@ -33,15 +33,19 @@ body {
     direction: rtl;
 }
 
-pre code, #html, #markdown {
+pre code,
+#html,
+#markdown {
     font-family: "Vazir Code", monospaced;
 }
 
-#left-column, #right-column {
+#left-column,
+#right-column {
     float: right;
 }
 
-#html, #markdown {
+#html,
+#markdown {
     line-height: 1.4;
     padding: 1em 0.5em 0 1em;
 }
@@ -112,15 +116,16 @@ blockquote {
     float: left;
 }
 
-.topbar .buttons-container .button, .topbar .buttons-container .button-group {
+.topbar .buttons-container .button, 
+.topbar .buttons-container .button-group {
     float: right;
 }
 
-.topbar .buttons-container .button-group .button.switch:after {
+.topbar .buttons-container .button-group .button.switch::after {
     display: none;
 }
 
-.topbar .buttons-container .button-group .button.switch:before {
+.topbar .buttons-container .button-group .button.switch::before {
     right: auto;
     left: -4px;
 }
@@ -144,19 +149,19 @@ blockquote {
     padding-left: 20px;
 }
 
-#settings #decrease-font-size:after {
+#settings #decrease-font-size::after {
     content: "\0627\0644\0641";
 }
 
-#settings #increase-font-size:after {
+#settings #increase-font-size::after {
     content: "\0627\0644\0641";
 }
 
-#settings #decrease-font-size:before {
+#settings #decrease-font-size::before {
     content: "-";
 }
 
-#settings #increase-font-size:before {
+#settings #increase-font-size::before {
     content: "+";
 }
 
