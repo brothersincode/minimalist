@@ -1,6 +1,7 @@
 var virastarApp;
 
 $(document).ready(function() {
+    // overrides the default method
     editor.updateWordCount = function(text) {
         var wordCount = "";
 

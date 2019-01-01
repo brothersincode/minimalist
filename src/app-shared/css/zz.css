@@ -47,11 +47,11 @@ pre code,
 #html,
 #markdown {
     line-height: 1.4;
-    padding: 1em 0.5em 0 1em;
+    padding: 0 0.5em 0 1em;
 }
 
 #preview {
-    padding: 1em 0.5em 0 1em;
+    padding: 0 0.5em 0 1em;
 }
 
 #preview ol {
@@ -116,7 +116,7 @@ blockquote {
     float: left;
 }
 
-.topbar .buttons-container .button, 
+.topbar .buttons-container .button,
 .topbar .buttons-container .button-group {
     float: right;
 }
