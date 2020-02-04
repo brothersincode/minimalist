@@ -1,5 +1,4 @@
 var gulp = require("gulp"),
-	uglify = require("uglify-js"),
 	CleanCss = require("clean-css"),
 	del = require("del"),
 	through = require("through2"),
@@ -63,6 +62,7 @@ var gulp = require("gulp"),
 		concat: require("gulp-concat"),
 		size: require("gulp-size"),
 		revision: require("gulp-rev"),
+		uglify: require("gulp-uglify-es").default,
 		htmlReplace: require("gulp-html-replace"),
 
 		saveRevFileName: function(assetType, theme) {
@@ -105,19 +105,13 @@ gulp.task("build-js", function() {
 		displayFinalSize = gulpPlugins.size({
 			title: "Minified + gzipped JS size",
 			gzip: true
-		}),
-
-		minifyJs = vinylMap(function(contents) {
-			return uglify.minify(contents.toString(), {
-				fromString: true
-			}).code;
 		});
 
 	return gulp.src(paths.js.srcGlob, { base: paths.base.src, allowEmpty: true })
 		.pipe(gulpPlugins.concat(paths.js.relDest))
 		.pipe(displayOriginalSize)
 		.pipe(babel())
-		.pipe(minifyJs)
+		.pipe(gulpPlugins.uglify().on('error', console.error))
 		.pipe(displayFinalSize)
 		.pipe(gulpPlugins.revision())
 		.pipe(gulpPlugins.saveRevFileName("js"))
