@@ -6,7 +6,9 @@ var gulp = require("gulp"),
 	vinylMap = require("vinyl-map"), // through2 abstraction for accessing file contents only
 	path = require("path"),
 	babel = require("gulp-babel"),
-	cssnext = require("gulp-cssnext")
+	postcss = require('gulp-postcss')
+	cssnano = require('cssnano')
+	autoprefixer = require('autoprefixer')
 
 	paths = {
 		base: {
@@ -89,12 +91,13 @@ var gulp = require("gulp"),
 	};
 
 // Empty paths.base.dest
-gulp.task("clean", function(c) {
-	del(paths.base.dest +"**", c);
+gulp.task("clean", function(done) {
+	del.sync(paths.base.dest +"**");
+	done();
 });
 
 // JS files: concat + minify + cache-bust
-gulp.task("build-js", ["clean"], function() {
+gulp.task("build-js", function() {
 	var displayOriginalSize = gulpPlugins.size({
 			title: "Original JS size"
 		}),
@@ -110,7 +113,7 @@ gulp.task("build-js", ["clean"], function() {
 			}).code;
 		});
 
-	return gulp.src(paths.js.srcGlob, { base: paths.base.src })
+	return gulp.src(paths.js.srcGlob, { base: paths.base.src, allowEmpty: true })
 		.pipe(gulpPlugins.concat(paths.js.relDest))
 		.pipe(displayOriginalSize)
 		.pipe(babel())
@@ -145,19 +148,23 @@ var buildThemedCss = function(theme) {
 		.pipe(displayOriginalSize)
 		.pipe(minifyCss)
 		.pipe(gulpPlugins.concat(paths.css.relDest[theme]))
-		.pipe(cssnext())
+		// .pipe(cssnext())
+		.pipe(postcss([
+			cssnano(),
+			autoprefixer()
+		]))
 		.pipe(displayFinalSize)
 		.pipe(gulpPlugins.revision())
 		.pipe(gulpPlugins.saveRevFileName("css", theme))
 		.pipe(gulp.dest(paths.base.dest));
 };
 
-gulp.task("build-css-theme-light", ["clean"], buildThemedCss.bind(null, "light"));
-gulp.task("build-css-theme-dark", ["clean"], buildThemedCss.bind(null, "dark"));
+gulp.task("build-css-theme-light", function(done) { return buildThemedCss("light"); });
+gulp.task("build-css-theme-dark", function(done) { return buildThemedCss("dark"); });
 
 // Revise assets' references. Currently only bothers to do that in index.html, since JS and CSS are the only
 // revised assets; will have to extend to CSS files once fonts and images are also revised.
-gulp.task("revise-assets-refs", ["build-js", "build-css-theme-light", "build-css-theme-dark"], function() {
+gulp.task("revise-assets-refs", gulp.series("build-js", "build-css-theme-light", "build-css-theme-dark", function() {
 	return gulp.src(paths.html.src, { base: paths.base.src })
 		.pipe(gulpPlugins.htmlReplace({
 			js: paths.js.relRevDest,
@@ -175,10 +182,10 @@ gulp.task("revise-assets-refs", ["build-js", "build-css-theme-light", "build-css
 			}
 		}))
 		.pipe(gulp.dest(paths.base.dest));
-});
+}));
 
 // Simply copy the rest of the files from src/ to dist/
-gulp.task("copy", ["clean"], function() {
+gulp.task("copy", function() {
 	var src = [].concat(
 		"src/**",
 		paths.negateGlob(paths.js.srcGlob),
@@ -190,4 +197,6 @@ gulp.task("copy", ["clean"], function() {
 		.pipe(gulp.dest(paths.base.dest));
 });
 
-gulp.task("default", ["build-js", "build-css-theme-light", "build-css-theme-dark", "revise-assets-refs", "copy"]);
+gulp.task("default", gulp.series("clean", "build-js", "build-css-theme-light", "build-css-theme-dark", "revise-assets-refs", "copy", function(done) {
+	done();
+}));
